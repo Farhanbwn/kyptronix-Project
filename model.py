@@ -107,7 +107,8 @@ input_data_reshape = input_data_as_numpy.reshape(1,-1)
 # print(std_data)
 
 # printing the prediction 
-prediction = classifier.predict(input_data_reshape)
+std_data = Stand.transform(input_data_reshape)
+prediction = classifier.predict(std_data)
 print(prediction)
 
 # printing the prediction 
@@ -125,31 +126,31 @@ import pickle
 filename = 'trained_model.sav'
 pickle.dump(classifier, open(filename, 'wb'))
 
-### Loading the Saved Model
-loaded_model = pickle.load(open('trained_model.sav', 'rb'))
+# ### Loading the Saved Model
+# loaded_model = pickle.load(open('trained_model.sav', 'rb'))
 
-input_data = (1,0,0,0,72,20,1.0,26.0,0.5,1911,0.719,0.919)
+# input_data = (1,0,0,0,72,20,1.0,26.0,0.5,1911,0.719,0.919)
 
-### changing the list data into numpy arrays
-input_data_as_numpy = np.asarray(input_data)
+# ### changing the list data into numpy arrays
+# input_data_as_numpy = np.asarray(input_data)
 
 
-# this reshape tell the model we need the prediction for only one data
-input_data_reshape = input_data_as_numpy.reshape(1,-1)
+# # this reshape tell the model we need the prediction for only one data
+# input_data_reshape = input_data_as_numpy.reshape(1,-1)
 
-# standardize the data to get the output
-# std_data = Stand.transform(input_data_reshape)
-# print(std_data)
+# # standardize the data to get the output
+# # std_data = Stand.transform(input_data_reshape)
+# # print(std_data)
 
-# printing the prediction 
-prediction = loaded_model.predict(input_data_reshape)
-print(prediction)
+# # printing the prediction 
+# prediction = loaded_model.predict(input_data_reshape)
+# print(prediction)
 
-# printing the prediction 
-if(prediction[0] == '0'):
-    print("The patient is NonDemented")
-elif(prediction[0] == '1'):
-    print("The patient is Demented")
-else:
-    print("The patient is Converted")
+# # printing the prediction 
+# if(prediction[0] == '0'):
+#     print("The patient is NonDemented")
+# elif(prediction[0] == '1'):
+#     print("The patient is Demented")
+# else:
+#     print("The patient is Converted")
 
