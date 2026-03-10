@@ -1,11 +1,11 @@
-# 🧠 Dementia Prediction Using Machine Learning
+#  Dementia Prediction Using Machine Learning
 
 > A machine learning system that predicts dementia risk using clinical assessments and MRI scan data to support early diagnosis and intervention.
 
 ---
 
 
-## 🎯 Overview
+##  Overview
 
 Early detection of dementia is critical for effective treatment and care planning. This project leverages machine learning to analyze clinical and neuroimaging data, identifying patterns that may indicate dementia risk before severe symptoms appear.
 
@@ -18,7 +18,7 @@ By combining these diverse data sources, the model provides healthcare professio
 
 ---
 
-## 🔍 Problem Statement
+##  Problem Statement
 
 Dementia affects millions worldwide, and by the time symptoms become obvious, significant brain changes have already occurred. This project addresses the challenge of:
 
@@ -28,7 +28,7 @@ Dementia affects millions worldwide, and by the time symptoms become obvious, si
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 ### Dataset Features
 
@@ -60,20 +60,20 @@ Dementia affects millions worldwide, and by the time symptoms become obvious, si
 
 ---
 
-## ✨ Features
+##  Features
 
-- ✅ Binary classification for dementia prediction
-- ✅ Support Vector Machine (SVM) classifier
-- ✅ Comprehensive data preprocessing and feature engineering
-- ✅ Missing value handling
-- ✅ Feature scaling and normalization
-- ✅ Model evaluation with multiple metrics
-- ✅ Confusion matrix and classification reports
-- ✅ Data visualization capabilities
+-  Binary classification for dementia prediction
+-  Support Vector Machine (SVM) classifier
+-  Comprehensive data preprocessing and feature engineering
+-  Missing value handling
+-  Feature scaling and normalization
+-  Model evaluation with multiple metrics
+-  Confusion matrix and classification reports
+-  Data visualization capabilities
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -83,7 +83,7 @@ Dementia affects millions worldwide, and by the time symptoms become obvious, si
 ### Setup
 
 
-## 💻 Usage
+##  Usage
 
 ### Basic Usage
 
@@ -115,7 +115,7 @@ print(classification_report(y_test, y_pred))
 ```
 
 
-## 🤖 Model Details
+##  Model Details
 
 ### Algorithm: Support Vector Machine (SVM)
 
@@ -150,7 +150,7 @@ print(classification_report(y_test, y_pred))
 
 ---
 
-## 📈 Results
+##  Results
 
 ### Model Performance
 
@@ -163,7 +163,7 @@ print(classification_report(y_test, y_pred))
 
 ---
 
-## 👥 Contact
+##  Contact
 
 **Your Name**
 - GitHub: [Farhanbwn](https://github.com/Farhanbwn)
