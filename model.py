@@ -123,8 +123,8 @@ else:
 ### Saving the Trained Model
 import pickle
 
-filename = 'trained_model.sav'
-pickle.dump(classifier, open(filename, 'wb'))
+pickle.dump(classifier, open('trained_model.sav', 'wb'))
+pickle.dump(Stand, open('scaler.sav', 'wb'))
 
 # ### Loading the Saved Model
 # loaded_model = pickle.load(open('trained_model.sav', 'rb'))
@@ -140,6 +140,7 @@ pickle.dump(classifier, open(filename, 'wb'))
 
 # # standardize the data to get the output
 # # std_data = Stand.transform(input_data_reshape)
+# # prediction = classifier.predict(std_data)
 # # print(std_data)
 
 # # printing the prediction 

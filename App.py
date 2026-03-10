@@ -12,6 +12,7 @@ from reportlab.lib import colors
 
 # Loading the Saved Model
 loaded_model = pickle.load(open('trained_model.sav', 'rb'))
+scaler = pickle.load(open('scaler.sav', 'rb'))
 
 
 def dementia_prediction(input_data):
@@ -19,8 +20,10 @@ def dementia_prediction(input_data):
     input_data_as_numpy = np.asarray(input_data)
     input_data_reshape = input_data_as_numpy.reshape(1, -1)
 
-    prediction = loaded_model.predict(input_data_reshape)
-
+    std_data = scaler.transform(input_data_reshape) 
+    prediction = loaded_model.predict(std_data)
+    
+    
     if prediction[0] == '0':
         return "The patient is NonDemented"
     elif prediction[0] == '1':
